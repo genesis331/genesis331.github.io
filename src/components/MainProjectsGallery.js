@@ -151,7 +151,7 @@ const MainProjectsGallery = forwardRef((props, ref) => {
                 </div>
                 <div className={styles.seeMorebox} ref={itemBox3}>
                     <span>
-                        <button onClick={props.pdFunc} className={styles.seeMoreBtn}>
+                        <button onClick={leavePage} className={styles.seeMoreBtn}>
                             <span>SEE MORE</span>
                             <IoArrowForward style={{ verticalAlign: "middle", paddingLeft: "8px" }} />
                         </button>
