@@ -1,0 +1,71 @@
+.gallery {
+    height: 30rem;
+}
+
+.scrollWrapper {
+    height: 30rem;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.endBox {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.itembox {
+    height: 100%;
+    display: inline-block;
+    padding-right: 3rem;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.itemWrapper {
+    overflow: hidden;
+    border-radius: 5px;
+    background-position: center;
+    text-align: right;
+}
+
+.seeMorebox {
+    padding: 0 4rem;
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.seeMorebox span {
+    display: inline-block;
+}
+
+.seeMoreBtn {
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'FuturaPTMedium';
+    background-color: transparent;
+}
+
+.seeMoreBtn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    height: 100%;
+}
+
+.itemBtn {
+    height: 30rem;
+    width: auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: none;
+    outline: none;
+    background-image: none;
+    border: 0 none;
+    padding: 0;
+}

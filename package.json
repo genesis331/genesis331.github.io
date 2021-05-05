@@ -1,27 +1,31 @@
 {
-  "name": "genesis331.github.io",
-  "homepage": "http://genesis331.github.io",
+  "name": "portfolio",
+  "homepage": "https://genesis331.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "framer-motion": "^3.3.0",
-    "gh-pages": "^3.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.2",
-    "tailwindcss": "^2.0.2",
+    "gsap": "^3.6.1",
+    "react": "^17.0.2",
+    "react-animated-cursor": "^2.1.8",
+    "react-dom": "^17.0.2",
+    "react-easy-emoji": "^1.4.0",
+    "react-gsap": "^2.2.1",
+    "react-icons": "^4.2.0",
+    "react-indiana-drag-scroll": "^1.8.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.1",
+    "splitting": "^1.0.6",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
