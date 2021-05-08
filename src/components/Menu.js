@@ -25,23 +25,20 @@ const Menu = forwardRef((props, ref) => {
     }));
 
     useEffect(() => {
-        TweenMax.to(sectionBAContent.current.children[0], 0, {
+        TweenMax.set(sectionBAContent.current.children[0], {
             y: 100,
-            opacity: 0,
-            ease: Power4.easeOut
+            opacity: 0
         });
         for (let i = 0; i <= menuSectionA.current.children[0].children.length - 1; i++) {
-            TweenMax.to(menuSectionA.current.children[0].children[i].children[0], 0, {
+            TweenMax.set(menuSectionA.current.children[0].children[i].children[0], {
                 x: 20,
-                opacity: 0,
-                ease: Power4.easeOut
+                opacity: 0
             });
         }
         for (let j = 0; j <= sectionBBContent.current.children.length - 1; j++) {
-            TweenMax.to(sectionBBContent.current.children[j].children[0], 0, {
+            TweenMax.set(sectionBBContent.current.children[j].children[0], {
                 y: 20,
-                opacity: 0,
-                ease: Power4.easeOut
+                opacity: 0
             });
         }
         setTimeout(() => {

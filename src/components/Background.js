@@ -23,11 +23,11 @@ const Background = forwardRef((props, ref) => {
         openFlapFromLeft() {
             setBoxAlign("left");
             setBoxColor("rgb(240,240,240)");
-            TweenMax.to(boxes.backgroundBox1.current, 0, { width: "0%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox2.current, 0, { width: "0%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox3.current, 0, { width: "0%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox4.current, 0, { width: "0%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox5.current, 0, { width: "0%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox1.current, { width: "0%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox2.current, { width: "0%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox3.current, { width: "0%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox4.current, { width: "0%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox5.current, { width: "0%", ease: Power3.easeInOut });
             setTimeout(() => {
                 TweenMax.to(boxes.backgroundBox1.current, 1.0, { width: "100%", ease: Power3.easeInOut });
                 TweenMax.to(boxes.backgroundBox2.current, 1.0, { width: "100%", ease: Power3.easeInOut });
@@ -40,11 +40,11 @@ const Background = forwardRef((props, ref) => {
         closeFlapFromLeft() {
             setBoxAlign("right");
             setBoxColor("rgb(240,240,240)");
-            TweenMax.to(boxes.backgroundBox1.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox2.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox3.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox4.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox5.current, 0, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox1.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox2.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox3.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox4.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox5.current, { width: "100%", ease: Power3.easeInOut });
             setTimeout(() => {
                 TweenMax.to(boxes.backgroundBox1.current, 1.0, { width: "0%", ease: Power3.easeInOut });
                 TweenMax.to(boxes.backgroundBox2.current, 1.0, { width: "0%", ease: Power3.easeInOut });
@@ -57,11 +57,11 @@ const Background = forwardRef((props, ref) => {
         closeFlapFromRight() {
             setBoxAlign("left");
             setBoxColor("rgb(240,240,240)");
-            TweenMax.to(boxes.backgroundBox1.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox2.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox3.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox4.current, 0, { width: "100%", ease: Power3.easeInOut });
-            TweenMax.to(boxes.backgroundBox5.current, 0, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox1.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox2.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox3.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox4.current, { width: "100%", ease: Power3.easeInOut });
+            TweenMax.set(boxes.backgroundBox5.current, { width: "100%", ease: Power3.easeInOut });
             setTimeout(() => {
                 TweenMax.to(boxes.backgroundBox1.current, 1.0, { width: "0%", ease: Power3.easeInOut });
                 TweenMax.to(boxes.backgroundBox2.current, 1.0, { width: "0%", ease: Power3.easeInOut });

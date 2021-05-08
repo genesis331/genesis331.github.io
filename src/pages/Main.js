@@ -40,14 +40,14 @@ const Main = forwardRef((props, ref) => {
     }));
 
     const animationReset = (splitText) => {
-        TweenMax.to(scrollTrack.current.children[0].children[0], 0, {
+        TweenMax.set(scrollTrack.current.children[0].children[0], {
             display: "inline-block",
             x: 100,
             opacity: 0,
             ease: Power3.easeOut
         });
         for (let u = 0; u <= scrollSlideX.current.children.length - 1; u++) {
-            TweenMax.to(scrollSlideX.current.children[u].children[0], 0, {
+            TweenMax.set(scrollSlideX.current.children[u].children[0], {
                 display: "inline-block",
                 x: 200,
                 opacity: 0,
@@ -56,7 +56,7 @@ const Main = forwardRef((props, ref) => {
         }
         for (let j = 0; j <= splitText[0].lines.length - 1; j++) {
             for (let i = 0; i <= splitText[0].lines[j].length - 1; i++) {
-                TweenMax.to(splitText[0].lines[j][i], 0, {
+                TweenMax.set(splitText[0].lines[j][i], {
                     display: "inline-block",
                     y: 100,
                     opacity: 0,
@@ -66,20 +66,20 @@ const Main = forwardRef((props, ref) => {
         }
         for (let j = 0; j <= splitText[1].lines.length - 1; j++) {
             for (let i = 0; i <= splitText[1].lines[j].length - 1; i++) {
-                TweenMax.to(splitText[1].lines[j][i], 0, {
+                TweenMax.set(splitText[1].lines[j][i], {
                     display: "inline-block",
                     y: 100,
                     ease: Power4.easeOut
                 });
             }
         }
-        TweenMax.to(introP4titletext.current, 0, {
+        TweenMax.set(introP4titletext.current, {
             x: 130,
             opacity: 0,
             ease: Power3.easeOut
         });
         for (let i = 0; i <= splitText[2].lines[0].length - 1; i++) {
-            TweenMax.to(splitText[2].lines[0][i], 0, {
+            TweenMax.set(splitText[2].lines[0][i], {
                 display: "inline-block",
                 y: 100,
                 opacity: 0,
@@ -87,14 +87,14 @@ const Main = forwardRef((props, ref) => {
             });
         }
         for (let i = 0; i <= splitText[2].lines[1].length - 1; i++) {
-            TweenMax.to(splitText[2].lines[1][i], 0, {
+            TweenMax.set(splitText[2].lines[1][i], {
                 display: "inline-block",
                 y: 100,
                 opacity: 0,
                 ease: Power4.easeOut
             });
         }
-        TweenMax.to(introP5details.current, 0, {
+        TweenMax.set(introP5details.current, {
             display: "inline-block",
             y: 100,
             opacity: 1,
