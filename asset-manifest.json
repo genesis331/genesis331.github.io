@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.593355f7.chunk.css",
-    "main.js": "/static/js/main.a814315d.chunk.js",
-    "main.js.map": "/static/js/main.a814315d.chunk.js.map",
+    "main.css": "/static/css/main.e4d2a98f.chunk.css",
+    "main.js": "/static/js/main.02eb888c.chunk.js",
+    "main.js.map": "/static/js/main.02eb888c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b6b02bb5.js",
     "runtime-main.js.map": "/static/js/runtime-main.b6b02bb5.js.map",
     "static/js/2.07e7bc57.chunk.js": "/static/js/2.07e7bc57.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.80d8b0cd.chunk.js": "/static/js/3.80d8b0cd.chunk.js",
     "static/js/3.80d8b0cd.chunk.js.map": "/static/js/3.80d8b0cd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.593355f7.chunk.css.map": "/static/css/main.593355f7.chunk.css.map",
+    "static/css/main.e4d2a98f.chunk.css.map": "/static/css/main.e4d2a98f.chunk.css.map",
     "static/js/2.07e7bc57.chunk.js.LICENSE.txt": "/static/js/2.07e7bc57.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/trump_gothic_west.485fa3cc.ttf",
     "static/media/ISO3.2e95da0a.png": "/static/media/ISO3.2e95da0a.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.b6b02bb5.js",
     "static/js/2.07e7bc57.chunk.js",
-    "static/css/main.593355f7.chunk.css",
-    "static/js/main.a814315d.chunk.js"
+    "static/css/main.e4d2a98f.chunk.css",
+    "static/js/main.02eb888c.chunk.js"
   ]
 }
