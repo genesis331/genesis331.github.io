@@ -1,4 +1,4 @@
-import { forwardRef, useRef, useEffect, useState } from "react";
+import { forwardRef, useImperativeHandle, useRef, useEffect, useState } from "react";
 import { TweenMax, Power3, Power4 } from "gsap";
 import Splitting from "splitting";
 import MainProjectsGallery from "../components/MainProjectsGallery";
@@ -20,6 +20,24 @@ const Main = forwardRef((props, ref) => {
     const [boxAlign, setBoxAlign] = useState("left");
     let observer1count = 0;
     let observer2count = 0;
+
+    useImperativeHandle(ref, () => ({
+        backToPageAnim() {
+            TweenMax.to(mainContainerRef.current, 1.4, {
+                top: 0,
+                opacity: 1,
+                ease: Power4.easeOut
+            });
+        },
+    
+        leavePageAnim() {
+            TweenMax.to(mainContainerRef.current, 1.4, {
+                top: 60,
+                opacity: 0,
+                ease: Power4.easeOut
+            });
+        }
+    }));
 
     const animationReset = (splitText) => {
         TweenMax.to(scrollTrack.current.children[0].children[0], 0, {
@@ -198,6 +216,7 @@ const Main = forwardRef((props, ref) => {
 
     let leavePageAnim = () => {
         TweenMax.to(mainContainerRef.current, 1.4, {
+            top: 100,
             opacity: 0,
             ease: Power4.easeOut
         });

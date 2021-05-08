@@ -19,6 +19,10 @@ function App() {
     const backgroundRef = useRef(null);
     const headerRef = useRef(null);
     const menuRef = useRef(null);
+    const mainRef = useRef(null);
+    const aboutRef = useRef(null);
+    const blogRef = useRef(null);
+    const projectRef = useRef(null);
     const [menuStatus, setMenuStatus] = useState(false);
     const [menuDiv, setMenuDiv] = useState(<></>);
     const [cursorStatus, setCursorStatus] = useState("240, 240, 240");
@@ -33,10 +37,36 @@ function App() {
                 setCursorStatus("240, 240, 240");
             }, 600);
             setTimeout(() => {
+                if (mainRef.current) {
+                    mainRef.current.backToPageAnim();
+                }
+                if (aboutRef.current) {
+                    aboutRef.current.backToPageAnim();
+                }
+                if (blogRef.current) {
+                    blogRef.current.backToPageAnim();
+                }
+                if (projectRef.current) {
+                    projectRef.current.backToPageAnim();
+                }
+            }, 700);
+            setTimeout(() => {
                 setMenuStatus(false);
                 setMenuDiv(<></>);
             }, 1000);
         } else {
+            if (mainRef.current) {
+                mainRef.current.leavePageAnim();
+            } 
+            if (aboutRef.current) {
+                aboutRef.current.leavePageAnim();
+            }
+            if (blogRef.current) {
+                blogRef.current.leavePageAnim();
+            }
+            if (projectRef.current) {
+                projectRef.current.leavePageAnim();
+            }
             backgroundRef.current.menuStartAnim();
             setTimeout(() => {
                 headerRef.current.toggleHeader();
@@ -98,16 +128,16 @@ function App() {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <Main animDelayBaseValue={300} backgroundRef={backgroundRef} />
+                        <Main animDelayBaseValue={300} backgroundRef={backgroundRef} ref={mainRef}/>
                     </Route>
                     <Route path="/about">
-                        <About backgroundRef={backgroundRef} />
+                        <About backgroundRef={backgroundRef} ref={aboutRef}/>
                     </Route>
                     <Route path="/blog">
-                        <Blog backgroundRef={backgroundRef} />
+                        <Blog backgroundRef={backgroundRef} ref={blogRef}/>
                     </Route>
                     <Route path="/projects">
-                        <Projects backgroundRef={backgroundRef} />
+                        <Projects backgroundRef={backgroundRef} ref={projectRef}/>
                     </Route>
                 </Switch>
             </Router>

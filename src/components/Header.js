@@ -27,7 +27,7 @@ const Header = forwardRef((props, ref) => {
         <div className={styles.container}>
             <div className={styles.containerFlex}>
                 <div className={styles.flexGrid}>
-                    <svg x="0" y="0" version="1.1" viewBox="0 0 800 800" className={styles.headerLogo} onClick={props.backToMain}>
+                    <svg x="0" y="0" version="1.1" viewBox="0 0 800 800" className={styles.headerLogo} onClick={headerStatus ? null : props.backToMain}>
                         <polygon points="174.96 717.48 11.84 717.48 406.06 84 569.19 84" className="st0" fill={headerColor} />
                         <polygon points="392.47 717.48 229.34 717.48 623.56 84 786.69 84" className="st0" fill={headerColor} />
                         <path d="M204.87,320.53H41.74l60.79-97.93C156.02,136.42,250.25,84,351.68,84h0L204.87,320.53z" className="st0" fill={headerColor} />
