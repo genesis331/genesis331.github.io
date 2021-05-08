@@ -24,6 +24,7 @@ const Projects = forwardRef((props, ref) => {
 
     useEffect(() => {
         props.backgroundRef.current.pageLoadAnim();
+        document.title = 'Zixu\'s Projects';
         // eslint-disable-next-line
     }, []);
 

@@ -24,6 +24,7 @@ const About = forwardRef((props, ref) => {
 
     useEffect(() => {
         props.backgroundRef.current.pageLoadAnim();
+        document.title = 'About Zixu';
         // eslint-disable-next-line
     }, []);
 
